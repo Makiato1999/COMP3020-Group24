@@ -144,7 +144,7 @@ function selection_buttons() {
   ];
   let temp='';
   options.forEach(option=>{
-    temp+='<a href="#" onclick="select_button_click(\''+option+'\')" class="btn btn__outline btn--round" id="'+option+'">'+option+'</a>';
+    temp+='<a href="#third_page" onclick="select_button_click(\''+option+'\')" class="btn btn__outline btn--round" id="'+option+'">'+option+'</a>';
   });
  return temp;
 }
