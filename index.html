@@ -14,38 +14,119 @@
 </head>
 
 <body>
-  <div class="header">
-    <img id="header_image" src="./static/header_background.jpg" />
-  </div>
-  <div id="logo_container">
-    <img id="logo" src="./static/order_up_logo_100px.png" title="Order Me Up logo">
-  </div>
+  <!-- first page -->
+  <header class="first" id="first_page">
+    <h1 >
+      <div id="logo_container_firstpage">
+        <a href="#first_page"><img id="logo" src="https://i.imgur.com/KymmhdC.png" title="Order Me Up logo">
+        </a>
+        <div class="location_bar">
+          <form>
+            <input type="text" id="search" placeholder="Enter Your Address">
+            <button type="submit"><a href="#second_page">&#9881;</a></button>
+          </form>
+        </div>
+        <div class="go_button_firstpage"><button type="submit"><a href="#second_page">Go</a></button></div>
+        <div class="pull_button_firstpage">
+          <a href="#second_page"><img id="pull" src="./static/pull.png " width="60" height="50" title="pull button"></a>
+        </div>
+      </div>
+    </h1>
+    <img id="backgroud" src="./static/landingpage.jpg" alt="background" width="100%" height="700">
+  </header>
+  <!-- first page end-->
 
-  <div class="bar">
-    <form>
-      <input type="text" id="search" onkeyup="searchTags(document.getElementById('search').value)" placeholder="Search">
-      <button type="submit" ><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-  
-  <div class="row" id="select_buttons"></div>
-
-  <div class="container">
-    <div id="balloon_buttons"></div>
-  </div>
-
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span id="close" class="close">&times;</span>
-      <div class="modal-data" id="modal_data"></div>
+  <!-- second page -->
+  <div class="second" id="second_page">
+    <div class="header">
+      <img id="header_image" src="./static/header_background.jpg" />
     </div>
+    <div id="logo_container_secondpage">
+      <a href="#first_page"><img id="logo" src="https://i.imgur.com/KymmhdC.png" title="Order Me Up logo">
+    </div></a>
+
+
+    <div class="container_secondpage">
+      <div class="left_container">
+        <div class="information1">
+          <p>
+          <h1><strong>Your current location is:</strong> </h1>
+          Millennium Library Park</br>
+          Smith St</br>
+          Winnipeg, MB R3C 1M5</br>
+          </br>
+          </br>
+          You can update your address anytime!
+          </p>
+        </div>
+        <div class="location_bar_secondpage">
+          <form>
+            <input type="text" id="search" placeholder="Enter Your Address">
+            <button type="submit"><a href="#second_page">&#9881;</a></button>
+          </form>
+        </div>
+        <div class="information2">
+          <p>
+          <h1><strong>Tips:</strong> </h1>
+          If you have any other problem, please contact us.</p>
+        </div>
+      </div>
+      <div class="map"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2570.4178149740274!2d-97.14319447864597!3d49.890958745291414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sca!4v1606091017785!5m2!1sen!2sca"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="go_button_secondpage"><button type="submit"><a href="#third_page">Everthing is Ok? Let's
+            order!</a></button></div>
+    </div>
+  </div>
+
+  <!-- second page end-->
+
+  <!-- third page -->
+  <div class="third" id="third_page">
+    <div class="header">
+      <img id="header_image" src="./static/header_background.jpg" />
+    </div>
+    <div id="logo_container_thirdpage">
+      <a href="#first_page"><img id="logo" src="https://i.imgur.com/KymmhdC.png" title="Order Me Up logo">
+      </a>
+      <div class="location_bar_thirdpage">
+        <form>
+          <input type="text" id="search" placeholder="Edit Your Address">
+          <button type="submit"><a href="#second_page">&#9881;</a></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="bar">
+      <form>
+        <input type="text" id="search" onkeyup="searchTags(document.getElementById('search').value)"
+          placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <div class="row" id="select_buttons"></div>
+
+    <div class="container">
+      <div class="icons"><a id="balloon_buttons"></a></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <div class="modal-data" id="modal_data"></div>
+      </div>
+    </div>
+    <!-- third page end-->
   </div>
   <div id="footer">
     <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Contact Us</a>
     <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Careers</a>
     <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">FAQ</a>
     <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Delivery Policy</a>
-    <img id="footer_logo" src="./static/order_me_up_logo_small.png" />
+    <a id="link" href="#first_page">Home<img id="footer_logo" src="./static/order_me_up_logo_small.png" /></a>
   </div>
 </body>
 
